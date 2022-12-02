@@ -10,7 +10,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	</http:listener-config>
 	<flow name="munittestingFlow" doc:id="57a579ed-7ce1-43da-870f-8fda5347e53d" >
 		<http:listener doc:name="Listener" doc:id="a966b721-9465-4f25-9d8f-cc5939c3a354" config-ref="HTTP_Listener_config" path="/munit"/>
-		<set-payload value='#["Munit testing is done"]' doc:name="Set Payload" doc:id="c2cae05b-ee9a-427c-90d7-a64b508ffe07" />
+		<set-payload value='#["Munit testing is done "]' doc:name="Set Payload" doc:id="c2cae05b-ee9a-427c-90d7-a64b508ffe07" />
 		<ee:transform doc:name="Transform Message" doc:id="a13273b4-2163-44f2-b6d3-e50e3cc2a3db" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
